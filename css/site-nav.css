@@ -1,0 +1,25 @@
+.site-nav {
+	float: right;
+}
+
+.site-nav__list {
+	list-style: none;
+	margin: 24px 0;
+	padding: 0;
+}
+
+.site-nav__item {
+	display: inline-block;
+	margin: 0 0 0 24px;
+}
+
+.site-nav__link {
+	padding: 0 0 2px;
+	color: #000;
+	text-decoration: none;
+}
+
+.site-nav__link:hover {
+	color: #e60000;
+	border-bottom: 1px solid #ccc;
+}
