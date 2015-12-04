@@ -29,7 +29,6 @@
 
             str += '<div class="tile__body">';
             str += '<h2 class="tile__heading">' + person.name + '</h2>';
-
             str += '<h3 class="tile__sub-heading">' + person.discipline.join(',') + '</h3>';
             str += '</div>';
 
@@ -112,9 +111,7 @@
         grid.innerHTML = contents;
     }
 
-    function loadData(e){
-        var loadTarget = e.target.getAttribute('data-load');
-
+    function loadData(loadTarget){
         if(loadTarget === "tribes"){
             loadTribes();
         }else if(loadTarget === "squads"){
@@ -126,7 +123,11 @@
 
     // add the event to handle clicks
     for(var i = 0; i < siteLinks.length; i++){
-        siteLinks[i].onclick = loadData;
+        siteLinks[i].addEventListener("click", function(e){
+            e.preventDefault();
+            var loadTarget = e.target.getAttribute('data-load');
+            loadData(loadTarget);
+        });
     }
 
     loadPeople();
