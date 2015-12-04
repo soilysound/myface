@@ -45,8 +45,7 @@
     function loadTribes(){
         var contents = '';
         background.className = 'active';
-
-        console.log("Load the tribes =)");
+        background.style.backgroundImage = 'url(' + skyFaceData.tribes[0].background + ')';
 
         // create the tribes elements
         grid.innerHTML = '';
@@ -83,7 +82,7 @@
     function loadSquads(){
         var contents = '';
         background.className = 'active';
-        console.log("Load the squads =)");
+        background.style.backgroundImage = 'url(' + skyFaceData.squads[0].background + ')';
 
         // create the tribes elements
         grid.innerHTML = '';
