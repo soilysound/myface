@@ -4,7 +4,6 @@
     -webkit-background-clip: text !important;
 }
 .gradient--orange {
-    color: #fff;
     background: #e60000;
     background: linear-gradient(120deg, #e60000 0, #f28300 100%);
 }
