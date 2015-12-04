@@ -1,11 +1,11 @@
 /* Import the relevant CSS */
-@import url('/css/global.css');
-@import url('/css/fonts.css');
-@import url('/css/grid.css');
-@import url('/css/layout.css');
-@import url('/css/gradients.css');
-@import url('/css/tile.css');
+@import url('global.css');
+@import url('fonts.css');
+@import url('grid.css');
+@import url('layout.css');
+@import url('gradients.css');
+@import url('tile.css');
 
 /* Components */
-@import url('/css/site-nav.css');
-@import url('/css/search.css');
+@import url('site-nav.css');
+@import url('search.css');

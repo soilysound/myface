@@ -28,7 +28,11 @@
   </div>
   <ul class="search__results" aria-hidden="true"></ul>
 
-  <script>
+  
+</div>
+
+
+<script>
 
     window.skyFaceData = {
         "tribes": [
@@ -137,81 +141,8 @@
         ]
     };
 
-    (function(){
-
-      function find(data,search){
-
-        var foundAll = [];
-
-        var people = data.people;
-        
-        for(var i=0; i< people.length;i++){
-          var object = people[i];
-          
-          for (key in object){
-            
-            var keySearch = (object[key].toString()).toLowerCase();
-            if( keySearch.indexOf(search) != -1 ){
-              if(foundAll.indexOf(object) == -1){
-                foundAll.push(object);
-              }
-            }
-          }
-        }
-
-        return foundAll;
-      }
-
-
-      function getPersonDetail( person, what){
-
-        var detail={};
-        for(var i=0;i<what.length;i++){
-          if(person.hasOwnProperty(what[i])){
-            detail[what[i]] = person[what[i]];
-          }
-        }
-        return detail;
-      }
-
-
-      function createCss(){
-
-
-      }
-
-      function createResults(results){
-
-        var html = '';
-        results.forEach(function(item){
-          html += template.replace(/#{name}/,item.name).replace(/#{details}/,item.discipline.join(','));
-        });
-
-        console.log(html);
-
-        return html;
-
-      }
-
-      var searchBox = document.querySelector('.search__input');
-      var searchResults = document.querySelector('.search__results');
-      var template = "<li><a href='#' onclick='filter()'><h5>#{name}</h5><p>#{details}</p></a></li>";
-
-      var style = document.createElement('style');
-      document.head.appendChild(style);
-
-      searchBox.onkeydown = function(e){
-        var html = '';
-        if(searchBox.value.length > 1){
-          html = createResults(find(window.skyFaceData, searchBox.value));
-        }
-
-        searchResults.innerHTML = html;
-      }
-
-    })();
+    
 
 
 
     </script>
-</div>

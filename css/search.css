@@ -1,9 +1,12 @@
 /*search.css*/
 .search {
   display: block;
-  outline: 1px solid red;
   position: relative;
   font-size: 1em;
+  max-width: 400px;
+  z-index: 100;
+  float: left;
+  padding: 21px 0;
 }
 
 .search__input {
@@ -19,7 +22,7 @@
   border: 0;
   position: absolute;
   width: 3.5em;
-  height: 100%;
+  height: 36px;
   right: 0;
   overflow: hidden;
 }
@@ -47,20 +50,48 @@
   border: 1px solid #ccc;
   opacity: 1;
   transition: opacity 0.1166s;
+  background: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+
 }
 
 .search__results:empty {
   opacity: 0;
 }
 
-.search__results-item:not(::last-child) {
+.search__results > li {
   border-bottom: 1px solid #ccc;
 }
 
-.search__results-item > a {
+.search__results > li:nth-child(8) {
+    display: none;
+}
+
+.search__results > li:last-of-type {
+  border-bottom: 0;
+}
+
+.search__results > li > a {
   display: block;
   padding: 0.5em 0;
   text-decoration: none;
   color: #555;
   font-size: 0.95em;
+  cursor: pointer;
+}
+
+.search__results > li > a > strong {
+  font-size: 1.1em;
+}
+
+.search__results > li > a > p {
+  font-size: 0.9em;
+}
+
+
+@media (max-width: 600px){
+    .search {
+        float: none;
+        max-width: 100%;
+    }
 }
