@@ -13,17 +13,10 @@
   flex: 0 25%;
   height: 100px;
   padding: 1em;
-  background: red;
 }
 
 .grid--2col .grid__item {
   flex: 0 50%;
-}
-
-.tile {
-  width: 100%;
-  height: 100%;
-  background: purple;
 }
 
 @media all and (max-width: 800px) {
