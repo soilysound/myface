@@ -5,7 +5,7 @@ $persons = [];
 
 
 $tribe = [
-    1 => [
+     [
         'id' =>1,
         'name' =>'Content',
         'image' => 'http://s2.uswitchstatic.com/_img/library/news_image/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg',
@@ -14,11 +14,11 @@ $tribe = [
 ];
 
 $squad = [
-  1 => [
+  [
       'id' =>1,
       'name' => 'Vrataski',
       'image' =>'http://s2.uswitchstatic.com/_img/library/news_image/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg',
-      'tribe' => $tribe[1],
+      'tribe' => $tribe[0],
   ],
 ];
 
@@ -39,7 +39,7 @@ for ($i=1; $i<=3; $i++)  {
         ],
         'startDate' =>'2015-12-04',
         'image' =>'http://webneel.com/sites/default/files/images/project/best-portrait-photography-regina-pagles%20(10).jpg',
-        'squad' =>$squad[1],
+        'squad' =>$squad[0],
     ];
 
     $persons[] = $person;
