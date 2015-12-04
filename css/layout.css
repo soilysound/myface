@@ -5,10 +5,19 @@
 }
 
 .site-wrapper {
+    position: relative;
+    overflow: hidden;
     flex-grow: 1;
 }
 
 .wrap {
     margin: 0 auto;
     padding: 36px 24px;
+    max-width: 1200px;
+}
+
+@media (max-width: 600px){
+    h1 {
+        font-size: 1.8em;
+    }
 }

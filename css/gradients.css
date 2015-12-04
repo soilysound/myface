@@ -7,3 +7,19 @@
     background: #e60000;
     background: linear-gradient(120deg, #e60000 0, #f28300 100%);
 }
+
+#site-background.active {
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+
+    background: url('/img/leeds-dock.jpg') no-repeat 100% / cover;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}

@@ -23,3 +23,13 @@
 	color: #e60000;
 	border-bottom: 1px solid #ccc;
 }
+
+@media (max-width: 600px){
+    .site-nav {
+        float: none;
+    }
+    .site-nav__list {
+        margin: 0;
+    }
+
+}

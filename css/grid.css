@@ -1,5 +1,5 @@
 .grid {
-
+    position: relative;
 }
 
 .grid__wrap {
@@ -11,7 +11,6 @@
 
 .grid__item {
   flex: 0 25%;
-  height: 100px;
   padding: 1em;
 }
 
@@ -21,6 +20,6 @@
 
 @media all and (max-width: 800px) {
   .grid__item {
-    flex: 1 50%;
+    flex: 0 50%;
   }
 }
