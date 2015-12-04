@@ -1,10 +1,23 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
-  font-family: skytext;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-touch-action: manipulation!important;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  font: 20px/1.4 skytext, sans-serif;
+  overflow-y: scroll;
+  background: #fff;
+  color: #222;
   text-align: center;
 }
