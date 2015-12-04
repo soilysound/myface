@@ -1,0 +1,60 @@
+/*search.css*/
+.search {
+  display: block;
+  outline: 1px solid red;
+  position: relative;
+  font-size: 1em;
+}
+
+.search__input {
+  width: 100%;
+  font-family: skytext;
+  font-size: 1em;
+  padding: 0.3em 1.5em 0.3em 0.5em;
+  border: 1px solid #ccc;
+}
+
+.search__button {
+  background: 0;
+  border: 0;
+  position: absolute;
+  width: 3.5em;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+}
+
+.search__icon {
+  width: 2em;
+  height: 2em;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #ccc;
+  position: absolute;
+}
+
+.search__button > span {
+  visibility: hidden
+}
+
+.search__results {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding: 0.25em 1em;
+  list-style: none;
+  border: 1px solid #ccc;
+}
+
+.search__results-item:not(::last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.search__results-item > a {
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95em;
+}
