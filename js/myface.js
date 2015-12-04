@@ -1,24 +1,24 @@
 (function(){
 
-    var content = document.getElementById('site-content');
+    var grid = document.getElementById('site-grid');
     var contents = '';
 
     // create the people elements
     skyFaceData.people.forEach(function(person, i){
         //console.log(i, person);
 
-        var str = '<a class="tile"';
+        var str = '<div class="grid__item"';
 
         str += ' data-name="'+person.name+'"';
         str += ' data-discipline="'+person.discipline+'"';
         str += ' data-squad="'+person.squad.name+'"';
         str += ' data-tribe="'+person.squad.tribe.name+'"';
 
-        str += '>'+person.name+'</a>';
+        str += '><a class="tile">'+person.name+'</a></div>';
 
         contents += str;
     });
 
-    content.innerHTML = contents;
+    grid.innerHTML = contents;
 
 })();
