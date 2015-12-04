@@ -177,6 +177,19 @@
 
   }
 
+  function searchPeople(e){
+
+    var result;
+    searchResults.innerHTML = "";
+    setCss('');
+
+    if(searchBox.value.length > 1){
+      result = createResults(find(window.skyFaceData, searchBox.value));
+      searchResults.appendChild(result[0] || document.createDocumentFragment());
+      setCss(result[1]);
+    }
+  }
+
   function createResults(results){
 
     var html = document.createDocumentFragment();
@@ -204,6 +217,7 @@
 
   }
 
+  var search = document.querySelector('.search');
   var searchBox = document.querySelector('.search__input');
   var searchResults = document.querySelector('.search__results');
   var cssTemplate = '.grid__item[data-name="#{name}"] {display: block}';
@@ -211,21 +225,21 @@
   window.style = document.createElement('style');
   document.head.appendChild(window.style);
 
-  searchBox.onkeyup = function(e){
+  searchBox.onkeyup = searchPeople;
 
-    var result;
-    searchResults.innerHTML = "";
-    setCss('');
+  document.body.onclick = function(e){
 
-    if(searchBox.value.length > 1){
-      result = createResults(find(window.skyFaceData, searchBox.value));
-      searchResults.appendChild(result[0] || document.createDocumentFragment());
-      setCss(result[1]);
-
+    if(!search.contains(e.target)){
+      searchResults.innerHTML = "";
     }
-
-
   };
+
+  var hash = location.hash;
+  if(hash){
+    searchBox.value = hash.replace(/#/, '');
+    searchPeople()
+  }
+
 
 })();
 
