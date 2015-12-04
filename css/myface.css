@@ -1,5 +1,5 @@
 /* Import the relevant CSS */
-@import url('./global.css');
-@import url('./fonts.css');
-@import url('./grid.css');
-@import url('./tile.css');
+@import url('/css/global.css');
+@import url('/css/fonts.css');
+@import url('/css/grid.css');
+@import url('/css/tile.css');
