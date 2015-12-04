@@ -183,7 +183,7 @@
     var result;
     searchResults.innerHTML = "";
     setCss('');
-
+    console.log(searchBox.value);
     if(searchBox.value.length > 1){
       result = createResults(find(window.skyFaceData, searchBox.value));
       searchResults.appendChild(result[0] || document.createDocumentFragment());
