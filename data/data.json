@@ -12,6 +12,7 @@
             "id": 1,
             "name": "Vrataski",
             "image": "http:\/\/s2.uswitchstatic.com\/_img\/library\/news_image\/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg",
+            "background": "https:\/\/danmayes.files.wordpress.com\/2012\/07\/sky-news-studio.jpeg",
             "tribe": {
                 "id": 1,
                 "name": "Content",
@@ -23,23 +24,22 @@
     "people": [
         {
             "id": 1,
-            "title": "Dr",
-            "name": "Jamie Hobbs",
-            "dob": "1990-12-04",
-            "email": "jamie.hobbs@sky.uk",
-            "phone": "0123456789",
-            "slackname": "@jamie.hobbs",
+            "title": "Prof.",
+            "name": "Aaron Allen",
+            "dob": "1978-06-17",
+            "email": "aaron.allen@sky.uk",
+            "phone": "01415 58240",
+            "slackname": "@aaron.allen",
             "discipline": [
-                "Developer",
-                "QA",
                 "Scrum Master"
             ],
-            "startDate": "2015-12-04",
-            "image": "http:\/\/webneel.com\/sites\/default\/files\/images\/project\/best-portrait-photography-regina-pagles%20(10).jpg",
+            "startDate": "2007-02-15",
+            "image": "http:\/\/lorempixel.com\/300\/300\/animals\/SkyFace\/?15684",
             "squad": {
                 "id": 1,
                 "name": "Vrataski",
                 "image": "http:\/\/s2.uswitchstatic.com\/_img\/library\/news_image\/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg",
+                "background": "https:\/\/danmayes.files.wordpress.com\/2012\/07\/sky-news-studio.jpeg",
                 "tribe": {
                     "id": 1,
                     "name": "Content",
@@ -50,23 +50,25 @@
         },
         {
             "id": 2,
-            "title": "Dr",
-            "name": "Jamie Hobbs",
-            "dob": "1990-12-04",
-            "email": "jamie.hobbs@sky.uk",
-            "phone": "0123456789",
-            "slackname": "@jamie.hobbs",
+            "title": "Dr.",
+            "name": "Joanne Young",
+            "dob": "1990-07-06",
+            "email": "joanne.young@sky.uk",
+            "phone": "(02360) 300540",
+            "slackname": "@joanne.young",
             "discipline": [
+                "Scrum Master",
+                "Product Owner",
                 "Developer",
-                "QA",
-                "Scrum Master"
+                "QA"
             ],
-            "startDate": "2015-12-04",
-            "image": "http:\/\/webneel.com\/sites\/default\/files\/images\/project\/best-portrait-photography-regina-pagles%20(10).jpg",
+            "startDate": "2001-05-13",
+            "image": "http:\/\/lorempixel.com\/300\/300\/animals\/SkyFace\/?53503",
             "squad": {
                 "id": 1,
                 "name": "Vrataski",
                 "image": "http:\/\/s2.uswitchstatic.com\/_img\/library\/news_image\/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg",
+                "background": "https:\/\/danmayes.files.wordpress.com\/2012\/07\/sky-news-studio.jpeg",
                 "tribe": {
                     "id": 1,
                     "name": "Content",
@@ -77,23 +79,24 @@
         },
         {
             "id": 3,
-            "title": "Dr",
-            "name": "Jamie Hobbs",
-            "dob": "1990-12-04",
-            "email": "jamie.hobbs@sky.uk",
-            "phone": "0123456789",
-            "slackname": "@jamie.hobbs",
+            "title": "Dr.",
+            "name": "Isaac Jackson",
+            "dob": "1961-10-17",
+            "email": "isaac.jackson@sky.uk",
+            "phone": "(02743) 300031",
+            "slackname": "@isaac.jackson",
             "discipline": [
+                "Product Owner",
                 "Developer",
-                "QA",
-                "Scrum Master"
+                "Head of Technology"
             ],
-            "startDate": "2015-12-04",
-            "image": "http:\/\/webneel.com\/sites\/default\/files\/images\/project\/best-portrait-photography-regina-pagles%20(10).jpg",
+            "startDate": "2007-05-10",
+            "image": "http:\/\/lorempixel.com\/300\/300\/animals\/SkyFace\/?32166",
             "squad": {
                 "id": 1,
                 "name": "Vrataski",
                 "image": "http:\/\/s2.uswitchstatic.com\/_img\/library\/news_image\/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg",
+                "background": "https:\/\/danmayes.files.wordpress.com\/2012\/07\/sky-news-studio.jpeg",
                 "tribe": {
                     "id": 1,
                     "name": "Content",
