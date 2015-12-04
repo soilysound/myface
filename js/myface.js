@@ -249,7 +249,8 @@
 })();
 
 function filter(name){
-
     var css = '.grid__item:not([data-name="' + name + '"]) {display: none}';
     window.style.textContent = (css);
 }
+
+
