@@ -6,12 +6,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 -1em;
+  margin: 0 -0.75em;
 }
 
 .grid__item {
+  display: flex;
   flex: 0 25%;
-  padding: 1em;
+  padding: 0.75em;
 }
 
 .grid--2col .grid__item {
@@ -21,5 +22,15 @@
 @media all and (max-width: 800px) {
   .grid__item {
     flex: 0 50%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .grid__wrap {
+    margin: 0 -0.5em;
+  }
+
+  .grid__item {
+    padding: 0.5em;
   }
 }
