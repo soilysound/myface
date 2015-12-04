@@ -151,9 +151,10 @@
       for (key in object){
 
         var keySearch = object[key].toString();
-        
-        if( keySearch.indexOf(search) != -1 ){
-          if(foundAll.indexOf(object) == -1){
+        keySearch = keySearch.toLowerCase()
+
+        if( keySearch.indexOf(search) !== -1 ){
+          if(foundAll.indexOf(object) === -1){
             foundAll.push(object);
           }
         }
