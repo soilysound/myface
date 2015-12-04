@@ -5,7 +5,7 @@
 }
 .gradient--orange {
     background: #e60000;
-    background: linear-gradient(120deg, #e60000 0, #f28300 100%);
+    background: linear-gradient(90deg, #e60000 0, #f28300 100%);
 }
 
 #site-background.active {
