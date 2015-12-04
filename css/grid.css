@@ -1,0 +1,33 @@
+.grid {
+
+}
+
+.grid__wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 -1em;
+}
+
+.grid__item {
+  flex: 0 25%;
+  height: 100px;
+  padding: 1em;
+  background: red;
+}
+
+.grid--2col .grid__item {
+  flex: 0 50%;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  background: purple;
+}
+
+@media all and (max-width: 800px) {
+  .grid__item {
+    flex: 1 50%;
+  }
+}
