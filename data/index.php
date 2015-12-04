@@ -94,7 +94,7 @@ $squads = [
   [
       'id' =>9,
       'name' => 'Accessory Shop',
-      'image' =>'http://s2.uswitchstatic.com/_img/library/news_image/sky_tv_color_logo_634x306x24_expand_ha5ab3ba9.jpg',
+      'image' =>'http://images6.fanpop.com/image/photos/37100000/game-of-thrones-game-of-thrones-37183402-1600-1200.jpg',
       'background' => 'http://images5.alphacoders.com/418/418731.jpg',
       'tribe' => $tribes[2],
   ],
@@ -145,7 +145,14 @@ for ($i=1; $i<=96; $i++)  {
     $disc= array_slice($disc, 0, rand(1, count($discs)));
 
     $startDate = $faker->dateTimeBetween($startDate = '-20 years') ->format('Y-m-d');
-    $image = $faker->imageUrl('300', '300', 'animals', true, 'SkyFace');
+
+
+    if ($gen == 'female') {
+        $image = 'http://api.randomuser.me/portraits/women/'.rand(1,90).'.jpg';
+    } else {
+        $image = 'http://api.randomuser.me/portraits/men/'.rand(1,90).'.jpg';
+    }
+
 
     $squadnum = ($i % 12);
     $person = [
