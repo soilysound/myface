@@ -139,6 +139,8 @@
 
   function find(data,search){
 
+    search = search.toLowerCase();
+
     var foundAll = [];
 
     var people = data.people;
@@ -148,7 +150,8 @@
 
       for (key in object){
 
-        var keySearch = (object[key].toString()).toLowerCase();
+        var keySearch = object[key].toString();
+        
         if( keySearch.indexOf(search) != -1 ){
           if(foundAll.indexOf(object) == -1){
             foundAll.push(object);

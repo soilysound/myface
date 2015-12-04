@@ -15,6 +15,7 @@
   font-size: 1em;
   padding: 0.3em 1.5em 0.3em 0.5em;
   border: 1px solid #ccc;
+  text-transform: lowercase
 }
 
 .search__button {
