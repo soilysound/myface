@@ -23,3 +23,13 @@
     flex: 0 50%;
   }
 }
+
+@media all and (max-width: 600px) {
+  .grid__wrap {
+    margin: 0 -0.5em;
+  }
+
+  .grid__item {
+    padding: 0.5em;
+  }
+}
