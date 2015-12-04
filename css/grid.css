@@ -11,7 +11,6 @@
 
 .grid__item {
   flex: 0 25%;
-  height: 100px;
   padding: 1em;
 }
 

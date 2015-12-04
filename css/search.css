@@ -45,6 +45,12 @@
   padding: 0.25em 1em;
   list-style: none;
   border: 1px solid #ccc;
+  opacity: 1;
+  transition: opacity 0.1166s;
+}
+
+.search__results:empty {
+  opacity: 0;
 }
 
 .search__results-item:not(::last-child) {
