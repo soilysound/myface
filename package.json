@@ -1,0 +1,20 @@
+{
+  "name": "myface",
+  "version": "0.0.0",
+  "description": "sky face wall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "compile": "sh ./build/compile.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soilysound/myface.git"
+  },
+  "author": "myface",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/soilysound/myface/issues"
+  },
+  "homepage": "https://github.com/soilysound/myface"
+}
