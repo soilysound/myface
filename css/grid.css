@@ -34,3 +34,10 @@
     padding: 0.5em;
   }
 }
+
+@media all and (max-width: 430px) {
+  .grid__item {
+    flex: 0 100%;
+  }
+}
+

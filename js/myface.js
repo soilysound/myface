@@ -29,7 +29,7 @@
 
             str += '<div class="tile__body">';
             str += '<h2 class="tile__heading">' + person.name + '</h2>';
-            str += '<h3 class="tile__sub-heading">' + person.discipline.join(',') + '</h3>';
+            str += '<h3 class="tile__sub-heading">' + person.discipline.join(', ') + '</h3>';
             str += '</div>';
 
             str += '</div>';
@@ -205,7 +205,7 @@
 
       link.innerHTML = [
         "<strong>" + item.name + "</strong>",
-        "<p>" + item.discipline + "</p>"
+        "<p>" + item.discipline.join(', ') + "</p>"
       ].join('');
 
       link.onclick = filter;

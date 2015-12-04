@@ -52,6 +52,9 @@
   transition: opacity 0.1166s;
   background: white;
   box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  max-height: 400px;
+  max-height: 40vh;
+  overflow: auto;
 
 }
 
@@ -63,7 +66,7 @@
   border-bottom: 1px solid #ccc;
 }
 
-.search__results > li:nth-child(8) {
+.search__results > li:nth-child(8n) {
     display: none;
 }
 
