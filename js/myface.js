@@ -29,7 +29,7 @@
 
             str += '<div class="tile__body">';
             str += '<h2 class="tile__heading">' + person.name + '</h2>';
-            str += '<h3 class="tile__sub-heading">Associate Software Developer</h3>';
+            str += '<h3 class="tile__sub-heading">' + person.discipline.join(',') + '</h3>';
             str += '</div>';
 
             str += '</div>';
@@ -45,8 +45,7 @@
     function loadTribes(){
         var contents = '';
         background.className = 'active';
-
-        console.log("Load the tribes =)");
+        background.style.backgroundImage = 'url(' + skyFaceData.tribes[0].background + ')';
 
         // create the tribes elements
         grid.innerHTML = '';
@@ -61,12 +60,10 @@
 
             str += '<div class="tile__image-wrap">';
             str += '<img class="tile__image" src="' + tribe.image +'">';
-            //
             str += '</div>';
 
             str += '<div class="tile__body">';
             str += '<h2 class="tile__heading">' + tribe.name + '</h2>';
-            str += '<h3 class="tile__sub-heading">Associate Software Developer</h3>';
             str += '</div>';
 
             str += '</div>';
@@ -83,7 +80,7 @@
     function loadSquads(){
         var contents = '';
         background.className = 'active';
-        console.log("Load the squads =)");
+        background.style.backgroundImage = 'url(' + skyFaceData.squads[0].background + ')';
 
         // create the tribes elements
         grid.innerHTML = '';
@@ -98,12 +95,10 @@
 
             str += '<div class="tile__image-wrap">';
             str += '<img class="tile__image" src="' + squad.image +'">';
-            //
             str += '</div>';
 
             str += '<div class="tile__body">';
             str += '<h2 class="tile__heading">' + squad.name + '</h2>';
-            str += '<h3 class="tile__sub-heading">' + person.discipline.join(',') + '</h3>';
             str += '</div>';
 
             str += '</div>';
